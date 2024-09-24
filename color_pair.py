@@ -1,5 +1,6 @@
 from color_constants import MAJOR_COLORS, MINOR_COLORS
 
+
 class ColorPair:
     @staticmethod
     def from_pair_number(pair_number):
