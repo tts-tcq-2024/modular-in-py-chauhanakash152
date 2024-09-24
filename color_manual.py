@@ -7,6 +7,6 @@ class ColorManual:
         """Generate a reference manual for color coding."""
         max_pairs = len(MAJOR_COLORS) * len(MINOR_COLORS)
         return '\n'.join(
-            f'{i}: {ColorPair.to_string(*ColorPair.from_pair_number(i))}' 
-            for i in range(1, max_pairs + 1)
+            f'{current_pair_index}: {ColorPair.to_string(*ColorPair.from_pair_number(current_pair_index))}' 
+            for current_pair_index in range(1, max_pairs + 1)
         )
