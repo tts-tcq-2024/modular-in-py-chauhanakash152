@@ -1,5 +1,6 @@
 from color_constants import MAJOR_COLORS, MINOR_COLORS
 
+
 class ColorNumber:
     @staticmethod
     def from_colors(major_color, minor_color):
