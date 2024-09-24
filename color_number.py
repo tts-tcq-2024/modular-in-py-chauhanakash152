@@ -11,7 +11,7 @@ class ColorNumber:
     @staticmethod
     def from_pair_number(pair_number):
         """Get the major and minor color from the given pair number."""
-        idx = pair_number - 1
-        major_index = idx // len(MINOR_COLORS)
-        minor_index = idx % len(MINOR_COLORS)
+        pair_number_index = pair_number - 1
+        major_index = pair_number_index // len(MINOR_COLORS)
+        minor_index = pair_number_index % len(MINOR_COLORS)
         return MAJOR_COLORS[major_index], MINOR_COLORS[minor_index]
